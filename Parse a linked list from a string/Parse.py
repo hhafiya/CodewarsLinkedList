@@ -2,9 +2,6 @@ class Node:
     def __init__(self, data, next=None): 
         self.data = data
         self.next = next
-    
-    def __repr__(self):
-        return f'Node{self.data, self.next}'
 
 def linked_list_from_string(s):
     s_list = list(reversed(s.split(' -> ')))
