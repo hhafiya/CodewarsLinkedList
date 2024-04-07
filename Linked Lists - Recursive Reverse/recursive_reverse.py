@@ -8,12 +8,13 @@ class Node(object):
 
 
 def reverse(head):
-    if head is None or head.next is None:
-        return head
-    reversed_head = reverse(head.next)
-    head.next.next = head
-    head.next = None
-    return reversed_head
+    def recursion(current, prev = None):
+        if current is None:
+            return prev
+        next_node = current.next
+        current.next = prev
+        return recursion(next_node, current)
+    return recursion(head)
 
 
 node_1 = Node(2)

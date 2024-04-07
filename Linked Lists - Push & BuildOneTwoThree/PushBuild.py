@@ -1,4 +1,3 @@
-from preloaded import Node
 
 '''
 Node is defined in preloaded like this:
