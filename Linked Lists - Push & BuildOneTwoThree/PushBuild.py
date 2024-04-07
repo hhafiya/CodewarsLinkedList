@@ -2,6 +2,9 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+    
+    def __repr__(self):
+        return f'Node{self.data, self.next}'
 
     
 def push(head, data):
@@ -14,3 +17,4 @@ def build_one_two_three():
     head = None
     for data in lst:
         head = push(head, data)
+    return head
