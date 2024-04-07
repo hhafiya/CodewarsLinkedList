@@ -5,8 +5,8 @@ class Node:
 
 def linked_list_from_string(s):
     s_list = list(reversed(s.split(' -> ')))
-    tail, s_list = None, s_list[1:]
-    current, head = tail, None
+    s_list = s_list[1:]
+    current, head = None, None
     for i in s_list:
         head = Node(int(i), current)
         current = head

@@ -1,12 +1,8 @@
-
-'''
-Node is defined in preloaded like this:
-
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
-'''
+
     
 def push(head, data):
     pushed = Node(data)
